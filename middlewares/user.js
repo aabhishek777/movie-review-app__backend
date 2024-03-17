@@ -9,6 +9,7 @@ export const isAuth = async (req, res, next) => {
       const token = authHeader.split(" ")[1];
       req.token = token;
       const decode = await jwt.verify(token, "secret");
+      console.log(decode);
       const { id } = decode;
       const user = await User.findById(id);
       req.user = user;

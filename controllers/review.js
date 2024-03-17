@@ -124,3 +124,13 @@ export const getReviewByMovie = async (req, res) => {
     return res.status(400).json({ msg: "error", data: error });
   }
 };
+
+
+// export const addPublicReview = async(req,res)=>{
+
+//   const movieId= req.params;
+//   try{
+
+
+//   }
+// }
