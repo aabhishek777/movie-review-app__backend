@@ -11,7 +11,7 @@ import reviewRouter from "./routes/review.js";
 
 const app = express();
 config({ path: "./config/.env" });
-const port = process.env.PORT || 5208;
+const port = process.env.PORT || 10000;
 app.use(cors());
 app.use(morgan("tiny"));
 app.use(express.json());
